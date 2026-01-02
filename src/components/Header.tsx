@@ -9,16 +9,20 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Styled like business card */}
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary lime-glow">
-              <span className="text-2xl">🍋</span>
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-accent to-primary shadow-lg">
+              <div className="flex flex-col items-center">
+                <span className="text-xs font-bold text-primary-foreground leading-none">🏠</span>
+                <span className="text-lg font-black text-primary-foreground leading-none">LM</span>
+              </div>
             </div>
             <div>
-              <h1 className="font-display text-2xl font-black text-gradient-primary">
-                Lime Spark
+              <h1 className="font-display text-2xl md:text-3xl font-black">
+                <span className="text-primary">Lime</span>{" "}
+                <span className="text-accent">Spark</span>
               </h1>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground font-medium">
                 By S.S. Cottage Industries
               </p>
             </div>

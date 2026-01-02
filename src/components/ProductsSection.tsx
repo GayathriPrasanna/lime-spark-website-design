@@ -1,35 +1,39 @@
 import ProductCard from "./ProductCard";
+import productDishwash from "@/assets/product-dishwash.png";
+import productDetergent from "@/assets/product-detergent.png";
+import productPhenyle from "@/assets/product-phenyle.png";
+import productBathroomAcid from "@/assets/product-bathroom-acid.png";
 
 const products = [
   {
-    title: "Dish Wash Liquid",
+    title: "Dish Wash Liquid (1.2 Liters)",
     description:
       "Powerful anti-bacterial formula that cuts through grease effortlessly. Available in 1.2 Liters pack for long-lasting freshness.",
-    icon: "🍽️",
+    image: productDishwash,
   },
   {
-    title: "Detergent Liquid",
+    title: "Premium Detergent Liquid",
     description:
       "High-performance cleaning for all fabrics. Gentle on clothes, tough on stains. Perfect for both machine and hand wash.",
-    icon: "👕",
+    image: productDetergent,
   },
   {
-    title: "Phenyle",
+    title: "Perfumed Herbal Phenyle",
     description:
       "Perfumed herbal floor cleaner that leaves your home smelling fresh and hygienic. Natural ingredients for a healthy home.",
-    icon: "🏠",
+    image: productPhenyle,
   },
   {
-    title: "Bathroom Acid",
+    title: "Hygienic Bathroom Acid",
     description:
       "Strong hygienic home care solution for sparkling clean bathrooms. Removes tough stains and lime deposits effectively.",
-    icon: "🚿",
+    image: productBathroomAcid,
   },
   {
-    title: "Lijol",
+    title: "Lijol Surface Cleaner",
     description:
       "Premium floor and surface cleaner that provides deep cleaning and long-lasting shine. Safe for all floor types.",
-    icon: "✨",
+    image: undefined,
   },
 ];
 
@@ -52,7 +56,7 @@ const ProductsSection = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {products.map((product, index) => (
             <ProductCard
               key={product.title}
